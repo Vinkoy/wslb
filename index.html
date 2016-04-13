@@ -1,1 +1,127 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Waze SLB / Waze Speed Limit Button</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- IE -->
+        <link rel="shortcut icon" type="image/x-icon" href="wslb/favicon.ico" />
+        <!-- other browsers -->
+        <link rel="icon" type="image/x-icon" href="wslb/favicon.ico" />
+        <style type="text/css">
+        body {
+            background: #222;
+            color: #eee;
+            margin-top: 20px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        a {
+            color: #FFF;
+        }
+        a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+        .thumbnails img {
+            height: 80px;
+            border: 4px solid #555;
+            padding: 1px;
+            margin: 0 10px 10px 0;
+        }
+
+        .thumbnails img:hover {
+            border: 4px solid #00ccff;
+            cursor:pointer;
+        }
+
+        .preview img {
+            border: 4px solid #444;
+            padding: 1px;
+            width: 400px;
+        }
+        </style>
+
+    </head>
+<body>
+
+    <div align="center">
+	<h2>Waze SLB (Waze Speed Limit Button)</h2>
+    
+	<p><strong>Last version: 
+    
+        <a href="APK/Waze_SLB_v0.40b.apk">Waze_SLB_v0.40b.apk</a><br/>
+
+    </strong></p>
+    </div>
+
+    <br/>
+
+<div class="gallery" align="center">    
+	<div class="thumbnails">
+		<img onmouseover="preview.src=img1.src" name="img1" src="wslb/images/img1.png" alt=""/>
+		<img onmouseover="preview.src=img2.src" name="img2" src="images/img2.png" alt=""/>
+		<img onmouseover="preview.src=img3.src" name="img3" src="images/img3.png" alt=""/>
+	</div>
+
+	<div class="preview" align="center">
+		<img name="preview" src="images/img1.png" alt=""/>
+	</div>
+</div>
+<br/>
+    
+    <h2>Description</h2>
+    <p>
+    The main idea is to imitate tap on the speedometer icon to display Speed Limit form. Waze SLB automatically starts and closes with Waze <i>(on Android 4.1+ it is neseccary to enable Waze SLB service in phone settings for this feature)</i>.
+    </p>
+    
+    <p>
+    After the first start you need to enter your WME username and valid email.<br/>
+<u>Show button</u> - display the Waze SLB button over the speedometer icon or make it invisible.<br/>
+<u>Autostart with Waze</u> - enable or disable autostart.
+    </p>
+    <br/>
+    
+    <strong>Features:</strong>
+    <ul>
+        <li>app autostarts with Waze (can be disabled in settings) and closes automatically if Waze is closed or another app is on top. <u>For autostart on Android 4.1+ please make sure that the Waze SLB service in enabled in phone settings <i>(Accessibility service)</i></u>;</li>
+        <li>app won't send URs if valid Name/Email is not filled or if coordinates weren't received;</li>
+        <li>coordinates are obtained when tapping the speedometer icon, then you can choose the  speed when it's convenient;</li>
+        <li>configuration form appears at the first start and can be called from the notification;</li>
+		<li>user-defined speed limit values;</li>
+        <li>on the config form: tap on version - check the updates, long tap - open url containing all the versions;</li>
+        <li>if the version number is red - new version is available.</li>
+    </ul>
+    <br/>
+    
+    <strong>Known issues:</strong>
+    <ul>
+        <li>since it uses overlapping button over the speedometer icon (red circle) the corresponding region is not available for tapping in Waze, keyboard etc. <u>Workaround: long tap on the button hides it for 5 seconds, this will allow you to tap under the button</u>.</li>
+    </ul>
+    <br/>
+    
+    <p>
+    <a target="_blank" href="https://www.waze.com/forum/viewtopic.php?f=819&t=184699">Topic on Waze forum</a>    
+    </p>
+    <br/>
+    
+    <strong>Previous versions:</strong>
+    <p>
+        <a href="APK/Waze_SLB_v0.35b.apk">Waze_SLB_v0.35b.apk</a><br/>
+        <a href="APK/Waze_SLB_v0.34b.apk">Waze_SLB_v0.34b.apk</a><br/>
+        <a href="APK/Waze_SLB_v0.33b.apk">Waze_SLB_v0.33b.apk</a><br/>
+        <a href="APK/Waze_SLB_v0.32b.apk">Waze_SLB_v0.32b.apk</a><br/>
+        <a href="APK/Waze_SLB_v0.31b.apk">Waze_SLB_v0.31b.apk</a><br/>
+    </p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76154914-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
