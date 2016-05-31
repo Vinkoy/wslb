@@ -5,9 +5,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- IE -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/www/favicon.ico" />
         <!-- other browsers -->
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/www/favicon.ico" />
         <style type="text/css">
         body {
             background: #222;
@@ -39,6 +39,16 @@
             padding: 1px;
             width: 400px;
         }
+        
+        .code {
+            border: 1px solid #c3c3c3;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            overflow: auto;
+            font-family: 'Consolas';
+            margin: 4px 0px 10px 10px;
+        }
+        
         </style>
 
     </head>
@@ -49,7 +59,7 @@
     
 	<p><strong>Last version: 
     
-        <a href="APK/Waze_SLB_v0.40b.apk">Waze_SLB_v0.40b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.42b.apk">Waze_SLB_v0.42b.apk</a><br/>
 
     </strong></p>
     </div>
@@ -61,6 +71,8 @@
 		<img onmouseover="preview.src=img1.src" name="img1" src="images/img1.png" alt=""/>
 		<img onmouseover="preview.src=img2.src" name="img2" src="images/img2.png" alt=""/>
 		<img onmouseover="preview.src=img3.src" name="img3" src="images/img3.png" alt=""/>
+		<img onmouseover="preview.src=img4.src" name="img4" src="images/img4.png" alt=""/>
+		<img onmouseover="preview.src=img5.src" name="img5" src="images/img5.png" alt=""/>
 	</div>
 
 	<div class="preview" align="center">
@@ -85,11 +97,27 @@
     <ul>
         <li>app autostarts with Waze (can be disabled in settings) and closes automatically if Waze is closed or another app is on top. <u>For autostart on Android 4.1+ please make sure that the Waze SLB service in enabled in phone settings <i>(Accessibility service)</i></u>;</li>
         <li>app won't send URs if valid Name/Email is not filled or if coordinates weren't received;</li>
-        <li>coordinates are obtained when tapping the speedometer icon, then you can choose the  speed when it's convenient;</li>
+        <li>coordinates are saved when tapping the speedometer icon, then you can choose the  speed when it's convenient;</li>
         <li>configuration form appears at the first start and can be called from the notification;</li>
 		<li>user-defined speed limit values;</li>
         <li>on the config form: tap on version - check the updates, long tap - open url containing all the versions;</li>
-        <li>if the version number is red - new version is available.</li>
+        <li>if the version number is red - new version is available;</li>
+		<li>different sign style for Europe and USA;</li>
+        <li>user-defined comments on [...] button (long tap). Examples:</li>
+        <ul>
+            <li style="list-style-type: none;">tap on black button (default text):<br/>
+                <div class="code">[WSLM] Nickname End of SL [accuracy:2m direction:90° (→)]</div>
+            </li>
+            <li style="list-style-type: none;">tap on black button (predefined text):<br/>
+                <div class="code">@@@Nickname: user predefined comment [accuracy:2m direction:90° (→)]</div>
+            </li>
+            <li style="list-style-type: none;">long tap with text:<br/>
+                <div class="code">@@@Nickname: entered text [accuracy:2m direction:90° (→)]</div>
+            </li>
+            <li style="list-style-type: none;">long tap without text (only nickname, accuracy and direction)<br/>
+                <div class="code">@@@Nickname [accuracy:2m direction:90° (→)]</div>
+            </li>
+        </ul>
     </ul>
     <br/>
     
@@ -106,11 +134,13 @@
     
     <strong>Previous versions:</strong>
     <p>
-        <a href="APK/Waze_SLB_v0.35b.apk">Waze_SLB_v0.35b.apk</a><br/>
-        <a href="APK/Waze_SLB_v0.34b.apk">Waze_SLB_v0.34b.apk</a><br/>
-        <a href="APK/Waze_SLB_v0.33b.apk">Waze_SLB_v0.33b.apk</a><br/>
-        <a href="APK/Waze_SLB_v0.32b.apk">Waze_SLB_v0.32b.apk</a><br/>
-        <a href="APK/Waze_SLB_v0.31b.apk">Waze_SLB_v0.31b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.41b.apk">Waze_SLB_v0.41b.apk</a><br/>
+	    <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.40b.apk">Waze_SLB_v0.40b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.35b.apk">Waze_SLB_v0.35b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.34b.apk">Waze_SLB_v0.34b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.33b.apk">Waze_SLB_v0.33b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.32b.apk">Waze_SLB_v0.32b.apk</a><br/>
+        <a href="https://dl.dropboxusercontent.com/u/5498264/Waze/Scripts/Waze_SLB/APK/Waze_SLB_v0.31b.apk">Waze_SLB_v0.31b.apk</a><br/>
     </p>
 
 <script>
